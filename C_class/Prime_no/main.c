@@ -1,9 +1,8 @@
-
-// A school method based C++ program to check if a
-// number is prime
 #include <stdio.h>
 #include <stdbool.h>
 
+// A school method based C++ program to check if a
+// number is prime
 bool isPrime(int n)
 {
     // Corner case
