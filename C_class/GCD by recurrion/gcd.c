@@ -1,29 +1,26 @@
 #include <stdio.h>
 
-int gcd(int a, int b)
+int GCD(int a, int b)
 {
-    if (b == 0)
+    if (b !=0)
     {
-        return a;
+        return GCD(b, a % b);
     }
     else
-        return gcd(b, a % b);
+        return a;
 }
 
 int main()
 {
-    int a, b, r;
+    int a, b;
 
-    printf("Enter 2 integer :");
+    printf("Enter 1st Number");
     scanf("%d", &a);
+
+    printf("Enter 2nd Number");
     scanf("%d", &b);
 
-    if (a > b)
-        r = gcd(a, b);
-    else if (a < b)
-        r = gcd(b, a);
-    else
-        r = a;
-
-    printf("GCD of %d : %d :: %d", a, b, r);
+    printf("GCD of %d , %d is %d", a, b, GCD(a, b));
+    return 0;
 }
+

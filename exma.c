@@ -1,56 +1,24 @@
 #include <stdio.h>
 
-
-
-int sum(int a, int b)
-{
-    int c;
-    c=a+b;
-    printf("%d",c);
-    
-    return c;
-}
-
-void sum1(int a, int b)
-{
-    int c;
-    c = a + b;
-    printf("%d", c);
-
-}
-
-int sum2()
-{
-    int a=5,b=6;
-    
-    int c;
-    
-    c = a + b;
-    
-    printf("%d", c);
-
-    return c;
-}
-
-void sum4()
-{
-    int a = 5, b = 6;
-
-    int c;
-
-    c = a + b;
-
-    printf("%d", c);
-}
-
 int main()
 {
-    int num1=5,num2=6;
-    
-    num1=sum4();
-        
 
-    sum(num1,num2);
+    int i, j, rows, k = 0;
+    printf(" Enter a number to define the rows: \n");
+    scanf("%d", &rows);
 
+    for (i = 1; i <= rows; i++)
+    {
+        for (j = 1; j <= rows - i; j++)
+        {
+            printf("  ");
+        }
+        // use for loop where k is less than equal to (2 * i -1)
+        for (k = 1; k <= (2 * i - 1); k++)
+        {
+            printf("* "); // print the Star
+        }
+        printf("\n");
+    }
     return 0;
 }

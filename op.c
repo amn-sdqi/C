@@ -8,7 +8,7 @@ int Fact(int N)
         if (N == 0 || N == 1)
             fact = 1;
         else
-            fact = fact * i;
+            fact *=i;
         
     }
    
