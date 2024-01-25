@@ -302,30 +302,81 @@
 
 //---------------------------------------------------------------ass QUES 15----------------------------------------------------------------------------
 
+// int main()
+// {
+
+//     // 2D array declaration
+//     int arr[6] = {10, 20, 30, 40, 50, 60}, ele = 0;
+
+//     printf("Enter the element to search");
+//     scanf("%d", &ele);
+
+//     // printing elements
+//     for (int i = 0; i <= 6; i++)
+//     {
+//         if (ele == arr[i])
+//         {
+//             printf("found %d on %d position", arr[i], i + 1);
+//             break;
+//         }
+//         else if (i==6)
+//         {
+//             printf("Element not found");
+//         }
+
+//     }
+
+//     return 0;
+// }
+
+//---------------------------------------------------------------ass QUES 16----------------------------------------------------------------------------
+
 int main()
 {
 
-    // 2D array declaration
-    int arr[6] = {10, 20, 30, 40, 50, 60}, ele = 0;
+    // declaring and initializing 2d array
+    int arr[4][4] = {
+        {
+            1,
+            2,
+            3,
+            4,
+        },
+        {
+            5,
+            6,
+            7,
+            8,
+        },
+        {
+            9,
+            10,
+            11,
+            12,
+        },
+        {13, 14, 15, 16}
+        };
 
-    printf("Enter the element to search");
-    scanf("%d", &ele);
-
-    // printing elements
-    for (int i = 0; i <= 6; i++)
+    printf("2D Array:\n");
+    // printing 2d array
+    for (int i = 0; i < 4; i++)
     {
-        if (ele == arr[i])
+        for (int j = 0; j < 4; j++)
         {
-            printf("found %d on %d position", arr[i], i + 1);
-            break;
+            printf("%d  ", arr[i][j]);
         }
-        else if (i==6)
-        {
-            printf("Element not found");
-        }
-        
+        printf("\n");
     }
 
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            if (i=j)
+            printf("%d  ", arr[i][j]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
