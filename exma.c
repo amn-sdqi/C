@@ -299,3 +299,33 @@
 //     printf("GCD OF %d & %d IS :: %d", a, b, GCD(a, b));
 //     return 0;
 // }
+
+//---------------------------------------------------------------ass QUES 15----------------------------------------------------------------------------
+
+int main()
+{
+
+    // 2D array declaration
+    int arr[6] = {10, 20, 30, 40, 50, 60}, ele = 0;
+
+    printf("Enter the element to search");
+    scanf("%d", &ele);
+
+    // printing elements
+    for (int i = 0; i <= 6; i++)
+    {
+        if (ele == arr[i])
+        {
+            printf("found %d on %d position", arr[i], i + 1);
+            break;
+        }
+        else if (i==6)
+        {
+            printf("Element not found");
+        }
+        
+    }
+
+
+    return 0;
+}
