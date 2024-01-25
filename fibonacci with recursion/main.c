@@ -12,7 +12,7 @@ int printFibo(int n)
 {
     for (int i = 0; i < n; ++i)
     {
-        printf("%d", fibo(i));
+        printf(": %d :\t", fibo(i));
     }
 }
 
