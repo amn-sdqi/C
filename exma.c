@@ -254,24 +254,48 @@
 
 //-------------------------------------------ass QUES 12------------------------------------------------------
 
-int fact(int n)
-{
-    if (n > 1)
-        return n * fact(n - 1);
+// int fact(int n)
+// {
+//     if (n > 1)
+//         return n * fact(n - 1);
 
-    else
-        printf("NUMBER IS SAMLLER THAN OR EQUAL TO 1");
-    return 1;
-}
+//     else
+//         printf("NUMBER IS SAMLLER THAN OR EQUAL TO 1");
+//     return 1;
+// }
 
-int main()
-{
-    int N;
+// int main()
+// {
+//     int N;
 
-    printf("ENTER A NUMBER");
-    scanf("%d", &N);
-    int res = fact(N);
-    printf("\n%d::\t%d", N, res);
+//     printf("ENTER A NUMBER");
+//     scanf("%d", &N);
+//     int res = fact(N);
+//     printf("\n%d::\t%d", N, res);
 
-    return 0;
-}
+//     return 0;
+// }
+
+//---------------------------------------------------------------------ass QUES 13---------------------------------------------------------------------
+
+// int GCD(int a, int b)
+// {
+//     if (b !=0)
+//         return GCD(b, a % b);
+//     else
+//         return a;
+// }
+
+// int main()
+// {
+//     int a, b;
+
+//     printf("ENTER 1ST NUMBER");
+//     scanf("%d", &a);
+
+//     printf("ENTER 2ND NUMBER");
+//     scanf("%d", &b);
+
+//     printf("GCD OF %d & %d IS :: %d", a, b, GCD(a, b));
+//     return 0;
+// }
