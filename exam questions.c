@@ -1,6 +1,8 @@
 //--------------------------------------------TRIANGLE PATTERN---------------------------------------------------------------
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 // int main()
 // {
 
@@ -308,23 +310,23 @@
 //     // 2D array declaration
 //     int arr[6] = {10, 20, 30, 40, 50, 60}, ele = 0;
 
-//     printf("Enter the element to search");
-//     scanf("%d", &ele);
+// printf("Enter the element to search");
+// scanf("%d", &ele);
 
-//     // printing elements
-//     for (int i = 0; i <= 6; i++)
+// printing elements
+// for (int i = 0; i <= 6; i++)
+// {
+//     if (ele == arr[i])
 //     {
-//         if (ele == arr[i])
-//         {
-//             printf("found %d on %d position", arr[i], i + 1);
-//             break;
-//         }
-//         else if (i==6)
-//         {
-//             printf("Element not found");
-//         }
-
+//         printf("found %d on %d position", arr[i], i + 1);
+//         break;
 //     }
+//     else if (i==6)
+//     {
+//         printf("Element not found");
+//     }
+
+// }
 
 //     return 0;
 // }
@@ -335,28 +337,128 @@
 // {
 
 //     // declaring and initializing 2d array
-// int arr[4][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+//     int arr[3][3] = {
+//         {
+//             1,
+//             2,
+//             3,
+//         },
+//         {
+//             4,
+//             5,
+//             6,
+//         },
+//         {7, 8, 9}};
 
 //     printf("2D Array:\n");
 //     // printing 2d array
-//     for (int i = 0; i < 4; i++)
+//     for (int i = 0; i < 3; i++)
 //     {
-//         for (int j = 0; j < 4; j++)
+//         for (int j = 0; j < 3; j++)
 //         {
-//             printf("%d  ", arr[i][j]);
+//             printf("%d: ", arr[i][j]);
 //         }
 //         printf("\n");
+//     }
+//     printf("\n");
+//     printf("\n");
+//     int sum = 0;
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             if (i == j)
+//                 printf("%d  ", arr[i][j]);
+//             sum += arr[i][j];
+//         }
+//         printf("\n");
+//     }
+//     printf("%d", sum);
+//     return 0;
+// }
+
+//---------------------------------------------------------------ass QUES 17----------------------------------------------------------------------------
+
+// int main()
+// {
+//     int a[3][3], b[3][3], mul[3][3], r, c, i, j, k;
+
+//     printf("enter the number of row=");
+//     scanf("%d", &r);
+
+//     printf("enter the number of column=");
+//     scanf("%d", &c);
+
+//     printf("enter the first matrix element=\n");
+//     for (i = 0; i < r; i++)
+//     {
+//         for (j = 0; j < c; j++)
+//         {
+//             scanf("%d", &a[i][j]);
+//         }
+//     }
+//     printf("enter the second matrix element=\n");
+//     for (i = 0; i < r; i++)
+//     {
+//         for (j = 0; j < c; j++)
+//         {
+//             scanf("%d", &b[i][j]);
+//         }
 //     }
 
-//     for (int i = 0; i < 4; i++)
+//     printf("multiply of the matrix=\n");
+//     for (i = 0; i < r; i++)
 //     {
-//         for (int j = 0; j < 4; j++)
+//         for (j = 0; j < c; j++)
 //         {
-//             if (i=j)
-//             printf("%d  ", arr[i][j]);
+//             mul[i][j] = 0;
+//             for (k = 0; k < c; k++)
+//             {
+//                 mul[i][j] += a[i][k] * b[k][j];
+//             }
+//         }
+//     }
+//     // for printing result
+//     for (i = 0; i < r; i++)
+//     {
+//         for (j = 0; j < c; j++)
+//         {
+//             printf("%d\t", mul[i][j]);
 //         }
 //         printf("\n");
 //     }
+//     return 0;
+// }
+
+//---------------------------------------------------------------ass QUES 18----------------------------------------------------------------------------
+
+// int isPallindrom(char *str)
+// {
+
+//     int l = strlen(str);
+
+//     for (int i = 0, j = l - 1; i <= j; i++, j--)
+//     {
+//         if (str[i] != str[j])
+//         {
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+
+// int main()
+// {
+//     char str[20];
+
+//     gets(str);
+
+//     if (isPallindrom(str))
+//     {
+//         printf("STRING IS PALLINDROM");
+//     }
+//     else
+//         printf("STRING IS NOT PALLINDROM");
 
 //     return 0;
 // }
